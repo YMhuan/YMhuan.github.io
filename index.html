@@ -158,6 +158,76 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-my-new-post" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/15/my-new-post/">第一篇博客</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/15/my-new-post/" class="archive-article-date">
+  	<time datetime="2019-08-15T03:14:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>August-15th-2019</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>摘自 Effective C++ 条款2<br>尽量使用<iostream> 而不用<stdio.h><br>要尽量有“输入输出流的概念” cin cout<br>最重要的原因当然是C++提供了流对象‘&gt;&gt;’和‘&lt;&lt;’，它们代表了新观念。流对象能输出对象，而printf函数和scanf函数不能。此外，起码还有下面两个次要原因。</stdio.h></iostream></p>
+<p>首先让我们观察一下printf函数和scanf函数的声明，它们分别是：</p>
+<p>int printf( char *, …);</p>
+<p>int scanf( char *, …);</p>
+<p>我们看到，除了第一个参数要求是char *以外，其余参数的类型不限，个数也不限。</p>
+<p>从这一点能够看出，C语言对函数参数的数据类型是不做严格的检查的，但是C++语言却是要做严格的类型检查的，这与C++支持函数重载有关。</p>
+<p>再者，在一个程序里，如果cin、cout和scanf、printf混合使用，系统不能保证他们的执行次序是正确的，</p>
+<p>假如我们希望输出‘我吃’，也许输出的是‘吃我’。尽管C++提供了解决这个问题的途径，但是一般不提倡这样做。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/15/my-new-post/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
